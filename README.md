@@ -4,7 +4,7 @@
 
 - Clone the repository
 
-$ git clone 
+$ git clone https://github.com/anjupriya-v/basic-banking-system.git
 
 - Redirect to the cloned repo directory
 
