@@ -1,5 +1,13 @@
 # Basic Banking System
 
+- Front-end : React.js
+
+- Back-end : Nodejs
+
+- Database : MySQL
+
+- Server : MySQL Server
+
 ## :point_down:Steps to initialize the project:
 
 - Clone the repository
@@ -12,7 +20,7 @@ $ git clone https://github.com/anjupriya-v/basic-banking-system.git
 
 $ cd client
 
--Install the dependencies
+- Install the dependencies
 
 `npm install`
 
@@ -22,18 +30,18 @@ $ cd client
 
 ### :point_down:Steps to setup the database
 
--First, Install the mysql server
+- First, Install the mysql server
 
 $ download link - https://dev.mysql.com/downloads/mysql/
 
--Then create the connection.
+- Then create the connection.
 
--create the database called bbs_database
+- create the database called bbs_database
 ```
 create database bbs_database`;
 ```
 
--create the table called 'bbs_allcustomers;
+- create the table called 'bbs_allcustomers;
 ```
 CREATE TABLE `bbs_allcustomers` (
   `customerID` int DEFAULT NULL,
@@ -46,7 +54,7 @@ CREATE TABLE `bbs_allcustomers` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 ```
 
--Then Create Another Table;
+- Then Create Another Table;
 ```
 CREATE TABLE `bbs_transaction` (
   `id` int NOT NULL AUTO_INCREMENT,
@@ -65,7 +73,7 @@ CREATE TABLE `bbs_transaction` (
 ) ENGINE=InnoDB AUTO_INCREMENT=3630 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 ```
 
--Then, replace with your host name,database Name,password and user name in `/sever/index.js` 
+- Then, replace with your host name,database Name,password and user name in `/sever/index.js` 
 
 ![CodeImage](https://user-images.githubusercontent.com/84177086/133745796-1c348607-2f86-4a71-81b8-08ce282c18ff.png)
 
@@ -73,7 +81,7 @@ CREATE TABLE `bbs_transaction` (
 
 $ cd sever
 
--Install the dependencies
+- Install the dependencies
 
 `npm install`
 
