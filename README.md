@@ -65,8 +65,9 @@ CREATE TABLE `bbs_transaction` (
 ) ENGINE=InnoDB AUTO_INCREMENT=3630 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 ```
 
--Then, change the host name,database Name,password  and user name in `/sever/index.js` 
+-Then, replace with your host name,database Name,password and user name in `/sever/index.js` 
 
+![CodeImage](https://user-images.githubusercontent.com/84177086/133745796-1c348607-2f86-4a71-81b8-08ce282c18ff.png)
 
 ### :point_down:Steps to start the server 
 
