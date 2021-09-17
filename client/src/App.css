@@ -1,0 +1,623 @@
+#header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/headerImage.jpg");
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 100vh;
+  background-attachment: fixed;
+}
+.allCustomersHeading, .manageCustomersHeading{
+  font-weight: bolder;
+}
+.viewDetails{
+  cursor: pointer;
+}
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; 
+}
+tr:nth-child(even) {background-color: #f2f2f2;}
+.nav-link {
+  cursor: pointer;
+}
+.aboutImage {
+  display: flex;
+  align-items: center;
+}
+.transparentBackground {
+  background: transparent;
+}
+.fillBackground {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  background-color: rgb(5, 5, 53);
+}
+#mainHeading {
+  text-align: center;
+  margin-top: 13em;
+}
+#mainHeading h5, h1 {
+  color: white
+}
+#mainHeading h1 {
+  padding-bottom: 0.2em;
+  font-size: 7vw;
+  text-shadow: 0px 3px 0px #b2a98f, 0px 14px 10px rgba(0, 0, 0, 0.15), 0px 24px 2px rgba(0, 0, 0, 0.1), 0px 34px 30px rgba(0, 0, 0, 0.1);
+  letter-spacing: 2px;
+  font-size: 4em;
+  color: #fff;
+  /* text-transform: uppercase; */
+  text-align: center;
+}
+.subHeading {
+  font-family: serif;
+  font-size: 1.5em;
+}
+.addCustButton {
+  position: relative;
+  top: 1em;
+}
+.cardImage {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.aboutContent {
+  margin-top: 2em;
+  font-family: serif;
+  font-size: 1.5em
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.allCustomersHeading {
+  text-align: center;
+  font-family: serif;
+}
+.cardContainer {
+  margin-bottom: 5em;
+}
+.icon {
+  color: white
+}
+div [class^="col-"] {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.mainCard {
+  transition: 0.5s;
+  cursor: pointer;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+.card-title {
+  font-size: 15px;
+  transition: 1s;
+  cursor: pointer;
+  text-align: center;
+}
+.mainCard:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+.card-text {
+  height: 80px;
+}
+.mainCard::before, .mainCard::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale3d(0, 0, 1);
+  transition: transform .3s ease-out 0s;
+  background: rgba(255, 255, 255, 0.1);
+  content: '';
+  pointer-events: none;
+}
+.mainCard::before {
+  transform-origin: left top;
+}
+.mainCard::after {
+  transform-origin: right bottom;
+}
+.mainCard:hover::before, .mainCard:hover::after, .mainCard:focus::before, .mainCard:focus::after {
+  transform: scale3d(1, 1, 1);
+}
+.addCustInput {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  border-radius: 0%;
+}
+.addCustInput:focus {
+  box-shadow: none;
+  outline: black;
+}
+label {
+  margin-left: 0.5em;
+}
+.field {
+  margin-top: 0.6em;
+}
+.svg-inline--fa {
+  vertical-align: -0.200em;
+}
+
+.secondHeading {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  color: black;
+  font-size: 3.5em;
+  padding-top: 1.4em
+}
+.table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.sectionTitle {
+  color: black;
+}
+footer {
+  background-color: rgb(5, 5, 53)
+}
+.followHeading {
+  padding-bottom: 3px
+}
+.bankContent {
+  background-color: rgb(5, 5, 53)
+}
+.bankText {
+  display: inline;
+  padding-left: 0.5em
+}
+.contactDiv {
+  height: 100%;
+}
+.contactHeading {
+  color: black;
+  text-align: center;
+  font-family: serif
+}
+.contactContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column
+}
+.formSubmittedContent {
+  text-align: center;
+}
+.navLinkColor {
+  color: white;
+}
+.manageCustomersHeading {
+  font-family: serif;
+  text-align: center
+}
+/* .transactionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+} */
+.modal-dialog {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.tableContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow-x: scroll
+}
+.deleteCustomer, .deleteHistory {
+  cursor: pointer;
+}
+.transaction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+#loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.transactionHistoryHeading {
+  text-align: center;
+}
+.transactionHistoryContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column
+}
+.transactMoneyHeading {
+  color: 'black';
+  text-align: 'center';
+}
+.details {
+  font-family: serif;
+  font-weight: 400;
+}
+.transactAmount {
+  font-weight: bolder;
+}
+.submitButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3em;
+}
+.custom-toggler.navbar-toggler {
+  border-color: white;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.vertical-alignment-helper {
+  display: table;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+.vertical-align-center {
+  /* To center vertically */
+  display: table-cell;
+  vertical-align: middle;
+  pointer-events: none;
+}
+.modal-content {
+  width: inherit;
+  max-width: inherit;
+  height: inherit;
+  margin: 0 auto;
+  pointer-events: all;
+}
+.successCard {
+  display: flex;
+  flex-flow: column wrap;
+  background: #fff;
+  justify-content: flex-start;
+  width: 320px;
+  border-radius: 10px;
+  gap: 5px;
+  box-shadow: 5px 5px 10px rgba(221, 221, 221, 0.445)
+}
+.successCard img {
+  border-radius: 10px 10px 0 0;
+  width: 320px;
+}
+.successText {
+  text-align: center;
+  font-weight: bolder;
+}
+.successCard p {
+  padding: 15px;
+  text-align: center;
+  color: #888B9E;
+  font-size: 15px;
+}
+.successCard div {
+  border-radius: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+}
+.aboutHeading {
+  color: black;
+  text-align: center;
+  font-family: serif
+}
+.transactionTitle {
+  font-family: serif;
+}
+.transactMoneyHeading {
+  color: black;
+  font-family: serif;
+  font-weight: bolder;
+  text-align: center
+}
+.content {
+  text-align: justify;
+  word-spacing: -2px;
+}
+.contactContent {
+  margin-top: 2em;
+}
+.successCard {
+  width: 100%;
+}
+.successCard img {
+  width: 100%;
+}
+.successText {
+  font-size: 1.2em;
+}
+.successContainer {
+  margin-top: 4em;
+}
+.content {
+  margin-top: 2em;
+  font-size: 0.7em;
+}
+.transactionHistoryHeading {
+  font-size: 1.7em;
+  margin-bottom: 1em;
+  margin-top: 0.5em;
+  font-family: serif;
+  font-weight: bolder;
+}
+/* .successText{
+  font-size: 1.5em;
+} */
+.transactionTitle {
+  font-size: 1.7em;
+}
+#myList {
+  width: 12em;
+}
+#mainHeading {
+  margin-top: 15em;
+}
+.details {
+  padding-top: 1.3em;
+  font-size: 1.4em;
+}
+.transactAmountDiv {
+  padding-top: 1.5em;
+}
+.subHeading {
+  font-size: 7vw;
+}
+.secondHeading {
+  font-size: 2.4em;
+}
+#ourServices {
+  padding-top: 2em;
+}
+.transactMoneyHeading {
+  padding-top: 0.5em;
+  font-size: 1.8em;
+}
+.allCustomersHeading {
+  font-size: 2.2em;
+  padding-top: 0.6em;
+}
+.manageCustomersHeading {
+  font-size: 1.7em;
+  padding-top: 0.6em;
+  padding-bottom: 0.4em;
+}
+.tableContainer {
+  margin-top: 1.5em;
+}
+.submitButton {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.tableText {
+  font-size: 0.8em;
+}
+@media (min-width:0px) and (max-width:280px) {
+  #mainHeading h1 {
+    font-size: 14vw;
+    text-shadow: none;
+    letter-spacing: 0px;
+  }
+}
+@media (min-width:281px) and (max-width:320px) {
+  .successText {
+    font-size: 1.5em;
+  }
+  #mainHeading h1 {
+    font-size: 14vw;
+    text-shadow: none;
+    letter-spacing: 0px;
+  }
+}
+@media (min-width:321px) and (max-width:384px) {
+  .successText {
+    font-size: 1.5em;
+  }
+  .successCard {
+    width: 280px
+  }
+  .subHeading {
+    font-size: 1.3em;
+  }
+  #mainHeading h1 {
+    font-size: 15vw;
+    text-shadow: none;
+    letter-spacing: 0px;
+  }
+}
+@media (min-width:385px) and (max-width:414px) {
+  .content {
+    font-size: 0.8em;
+  }
+  .subHeading {
+    font-size: 1.5em;
+  }
+  .successCard {
+    width: 280px
+  }
+  .successText {
+    font-size: 1.5em;
+  }
+  #mainHeading h1 {
+    font-size: 15vw;
+    text-shadow: none;
+    letter-spacing: 0px;
+  }
+}
+@media (min-width:414px) and (max-width:480px) {
+  #mainHeading h1 {
+    font-size: 13vw;
+    text-shadow: none;
+    letter-spacing: 0px;
+  }
+  .content {
+    font-size: 0.8em;
+  }
+  .subHeading {
+    font-size: 1.5em;
+  }
+  #myList {
+    width: 15em;
+  }
+  .successCard {
+    width: 280px
+  }
+  .successText {
+    font-size: 1.5em;
+  }
+}
+@media (min-width:481px) and (max-width:600px) {
+  #myList {
+    width: 20em;
+  }
+  .tableText {
+    font-size: 0.9em;
+  }
+  #mainHeading h1 {
+    font-size: 4.4em;
+  }
+  .subHeading {
+    font-size: 1.5em;
+  }
+  .content {
+    font-size: 0.9em;
+  }
+  .successCard {
+    width: 280px
+  }
+  .successText {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width:601px) and (max-width:1024px) {
+  #myList {
+    width: 20em;
+  }
+  .tableText {
+    font-size: 1em;
+  }
+  #mainHeading h1 {
+    font-size: 5em;
+  }
+  .subHeading {
+    font-size: 1.5em;
+  }
+  .content {
+    font-size: 0.9em;
+  }
+  .successCard {
+    width: 280px
+  }
+  .successText {
+    font-size: 1.5em;
+  }
+  .manageCustomersHeading,.allCustomersHeading , .transactionHistoryHeading{
+    font-size: 2em;
+
+  }
+}
+@media (min-width:601px) and (max-width:720px) {
+  #mainHeading h1 {
+    font-size: 4.6em;
+  }
+  
+}
+@media (min-width:901px) and (max-width:1024px) {
+  .manageCustomersHeading,.allCustomersHeading , .transactionHistoryHeading{
+    font-size: 2em;
+
+  }
+  #mainHeading h1 {
+    font-size: 5em;
+  }
+}
+@media (min-width:1025px) and (max-width:1440px) {
+  .manageCustomersHeading,.allCustomersHeading , .transactionHistoryHeading{
+    font-size: 2.5em;
+
+  }
+  /* .allCustomersHeading{
+    font-size: 2em;
+
+  }
+  .transactionHistoryHeading{
+    font-size: 1.5em;
+  } */
+  #myList {
+    width: 20em;
+  }
+  .tableText {
+    font-size: 1em;
+  }
+  #mainHeading h1 {
+    font-size: 6em;
+  }
+  .subHeading {
+    font-size: 1.8em;
+  }
+  .content {
+    font-size: 0.9em;
+  }
+  .successCard {
+    width: 280px
+  }
+  .successText {
+    font-size: 1.5em;
+  }
+}
+@media (min-width:1441px) {
+  .manageCustomersHeading,.allCustomersHeading , .transactionHistoryHeading{
+    font-size: 2.5em;
+
+  }
+  #myList {
+    width: 20em;
+  }
+  .tableText {
+    font-size: 1em;
+  }
+  #mainHeading h1 {
+    font-size: 6em;
+  }
+  .subHeading {
+    font-size: 1.8em;
+  }
+  .content {
+    font-size: 0.9em;
+  }
+  .successCard {
+    width: 280px
+  }
+  .successText {
+    font-size: 1.5em;
+  }
+}
