@@ -11,23 +11,23 @@
 ## :point_down:Steps to initialize the project:
 
 - Clone the repository
-
+```
 $ git clone https://github.com/anjupriya-v/basic-banking-system.git
-
+```
 - Redirect to the cloned repo directory
 
 ### :point_down:Steps to start the client
-
+```
 $ cd client
-
+```
 - Install the dependencies
-
-`npm install`
-
+```
+$ npm install
+```
 - start the client
-
-`npm start`
-
+```
+$ npm start
+```
 ### :point_down:Steps to setup the database
 
 - First, Install the mysql server
@@ -78,13 +78,14 @@ CREATE TABLE `bbs_transaction` (
 ![CodeImage](https://user-images.githubusercontent.com/84177086/133745796-1c348607-2f86-4a71-81b8-08ce282c18ff.png)
 
 ### :point_down:Steps to start the server 
-
+```
 $ cd sever
-
+```
 - Install the dependencies
-
-`npm install`
-
+```
+$ npm install
+```
 - start the server
-
-`npm start`
+```
+npm start
+```
