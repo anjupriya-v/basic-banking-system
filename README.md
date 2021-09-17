@@ -38,7 +38,7 @@ $ download link - https://dev.mysql.com/downloads/mysql/
 
 - create the database called bbs_database
 ```
-create database bbs_database`;
+create database bbs_database;
 ```
 
 - create the table called 'bbs_allcustomers;
