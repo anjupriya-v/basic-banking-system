@@ -7,6 +7,11 @@
 - Database : MySQL
 
 - Server : MySQL Server
+ 
+## Live Demo Video :
+<video src="https://user-images.githubusercontent.com/84177086/136166642-1ba1b44e-f397-4293-8798-7c34d725be55.mp4" controls>
+  Your browser does not support the video tag.
+</video>
 
 ## :point_down:Steps to initialize the project:
 
